@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color:  #541554;
+    padding-bottom: 7vh;
+}
+a{
+    color: white;
+}
+.headerNav
+{
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 3vh;
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    top: 0;
+    color: white;
+}
+.headerLogo{
+    padding-top: 3vh;
+}
+.ulHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+}
+.ulHeader> li{
+    margin-right: 10%;
+    list-style: none;
+}
+.ulHeader > li >a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.rightNav{
+    /* padding-top: 3vh; */
+    display: flex;
+   align-items: flex-end;
+   position: absolute;
+   right: 0%;
+}
+.rightNav div{
+    margin-left: 5vh;
+}
+.rightNav>div>a{
+    text-decoration: none;
+    margin-right: 10vh;
+}
+.firstButtonHeader 
+{
+    margin-top: 3vh;
+    border-radius:2vh ;
+    border: 1px white solid;
+    padding: 2vh;
+    /* position: absolute; */
+}
+.sign{
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.SecondButtonHeader{
+    /* position: absolute; */
+    background-color: white;
+    padding: 2vh;
+}
+.SecondButtonHeader a{
+    color: #541554;
+}
+h1{
+    /* color: white; */
+    font-size: 8vh;
+    /* text-align: center; */
+}
+.titleHeaderBold{
+    color: #ecb22e;
+}
+.headerPiska{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.sign :nth-child(1) 
+{
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 1px solid white;
+    background-color:white ;
+    font-size: larger;
+}
+.sign :nth-child(2) 
+{
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 1px solid white;
+    background-color:lawngreen ;
+    font-size: larger;
+}
+.sign :nth-child(1) a 
+{ 
+    color:#541554;
+}
+.company{
+    padding-left: 25vh;
+    padding-right: 25vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+.one{
+    background-color: #f4ede4;
+
+}
+.gridOne{
+    display: grid;
+  grid-template-areas: ". . a"
+                         "b . ."
+                         ". . c"  ;
+  justify-content: space-around;
+}
+.gridOne div p{
+    font-weight: bolder;
+    line-height: 1.5;
+}
+.gridOne h1{
+    font-size: 8.5vh;
+}
+.p1
+{
+    grid-area: a;
+    justify-self: end;
+}
+.p2{
+    grid-area: b;
+    justify-self: start;
+}
+.p3{
+    grid-area: c;
+    justify-self: end;
+}
+.company img{
+/* flex-basis: 25%; */
+/* width:10vh;
+height: 10vh;*/
+ /* margin-right: 30vh; 
+  */
+  padding: 4%;
+}
+.p1{
+    /* position: absolute;
+    right: 0%; */
+    grid-column-end:3;
+    grid-row-start: 1;
+}
+
+
+@media screen and (max-width:600px){
+    .ulHeader, .headerNav,.rightNav{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+}
+.titleHeader{
+    display: inline-block;
+    color: white;
+    font-size: 10vh;
+    /* text-align: center; */
+}
+h3{
+    margin-top: 0;
+    padding-top: 0;
+}
+p
+{
+margin-bottom: 0;
+}
+.one >h3{ 
+    text-align: center;
+    padding-top: 7vh;
+}
+.p3
+{
+padding-bottom: 10vh;
+}
+.k{
+margin-left: 7vh;
+
+}
+.two h1 ,h3
+{
+    text-align: center;
+}
+.aInSectionTwo a
+{
+    color: #541554;
+    margin-right: 10vh;
+}
+.aInSectionTwo a :nth-child(1)
+
+{
+    color: #541554;
+    margin-right: 10vh;
+    margin-top: 3vh;
+    border-radius:2vh ;
+    border: 1px white solid;
+    padding: 2vh;
+}
+
+.aInSectionTwo
+{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.present{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10vh;
+}
+.three{
+    background-color: #f4ede4;
+    text-align: center;
+    padding-top: 10vh;
+}
+.three h2{
+    font-size: larger;
+}
+.picture{
+    display: flex;
+    flex-flow: row;
+    /* justify-content: space-around; */
+}
+.picture div{
+    width: 20%;
+    height: 40%;
+    background-color: white;
+    padding: 5vh;
+    margin: 5vh;
+    text-align: start;
+}
+.underPage{
+    margin-top: 0;
+background-color: #541554;
+border-bottom: #541554 solid 1px;
+border-bottom-left-radius: 60%;
+border-bottom-right-radius:60%;
+padding: 10vh;
+}
+.underPage h1{
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 12vh;
+}
+.present h2{
+    color: #541554;
+    font-weight: bolder;
+    font-size: 10vh;
+    margin-bottom: 0;
+}
+.present p{
+    font-weight: bold;
+}
+.WelcimeLink{
+    display: flex;
+    justify-content: center;
+}
+.WelcimeLink :nth-child(1){
+  background-color: white;
+  padding: 5vh;
+  border-radius: 3vh;
+
+}
+.firstButton a{
+    color: #541554;
+}
+.SecondButton{
+    background-color: white;
+}
+.SecondButton a{
+color: #541554;
+}
+.four h1{
+    font-size: 10vh;
+}
+.lists{
+    display: flex;
+    justify-content: space-around;
+}
+.lists>li{
+    list-style: none;
+}
+.lists>li :hover{
+    cursor: pointer;
+}
